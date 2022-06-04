@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31405B48-0064-496F-9441-05B1A6019592}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Yurt_Otomasyon</RootNamespace>
+    <AssemblyName>Yurt Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.BulkOperations, Version=3.0.37.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.BulkOperations.3.0.37\lib\net45\Z.BulkOperations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AramaIslemleri.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IIslemler.cs" />
+    <Compile Include="Interface\IMenu.cs" />
+    <Compile Include="Interface\IPanel.cs" />
+    <Compile Include="Interface\ISqlVeri.cs" />
+    <Compile Include="MenuGecis\Menu.cs" />
+    <Compile Include="MenuGecis\OtomasyonMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGecis\OtomasyonMenu.Designer.cs">
+      <DependentUpon>OtomasyonMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\Blok Ekle\uc_Oda_BlokEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\Blok Ekle\uc_Oda_BlokEkle.Designer.cs">
+      <DependentUpon>uc_Oda_BlokEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\Blok Sil\uc_Oda_BlokSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\Blok Sil\uc_Oda_BlokSil.Designer.cs">
+      <DependentUpon>uc_Oda_BlokSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\Listele\uc_Oda_Listele.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\Listele\uc_Oda_Listele.Designer.cs">
+      <DependentUpon>uc_Oda_Listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\Oda Ekle\uc_Oda_OdaEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\Oda Ekle\uc_Oda_OdaEkle.Designer.cs">
+      <DependentUpon>uc_Oda_OdaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\Oda Sil\uc_Oda_OdaSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\Oda Sil\uc_Oda_OdaSil.Designer.cs">
+      <DependentUpon>uc_Oda_OdaSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Oda\uc_Oda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Oda\uc_Oda.Designer.cs">
+      <DependentUpon>uc_Oda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Ekle\uc_Odeme_Ekle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Ekle\uc_Odeme_Ekle.Designer.cs">
+      <DependentUpon>uc_Odeme_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Gecikenler\uc_Odeme_Gecikenler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Gecikenler\uc_Odeme_Gecikenler.Designer.cs">
+      <DependentUpon>uc_Odeme_Gecikenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Listele\uc_Odeme_Listele.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Odeme\Listele\uc_Odeme_Listele.Designer.cs">
+      <DependentUpon>uc_Odeme_Listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Odeme\uc_Odeme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Odeme\uc_Odeme.Designer.cs">
+      <DependentUpon>uc_Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Duzenle\uc_Ogrenci_Duzenle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Duzenle\uc_Ogrenci_Duzenle.Designer.cs">
+      <DependentUpon>uc_Ogrenci_Duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Kayit\uc_Ogrenci_Kayit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Kayit\uc_Ogrenci_Kayit.Designer.cs">
+      <DependentUpon>uc_Ogrenci_Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Listele\uc_Ogrenci_Listele.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Listele\uc_Ogrenci_Listele.Designer.cs">
+      <DependentUpon>uc_Ogrenci_Listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Sil\uc_Ogrenci_Sil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\Sil\uc_Ogrenci_Sil.Designer.cs">
+      <DependentUpon>uc_Ogrenci_Sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\uc_Ogrenci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Ogrenci\uc_Ogrenci.Designer.cs">
+      <DependentUpon>uc_Ogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Yoklama\Duzenle\uc_Yoklama_Duzenle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Yoklama\Duzenle\uc_Yoklama_Duzenle.Designer.cs">
+      <DependentUpon>uc_Yoklama_Duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Yoklama\uc_Yoklama.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Yoklama\uc_Yoklama.Designer.cs">
+      <DependentUpon>uc_Yoklama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\Ekle\uc_Yonetici_Ekle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\Ekle\uc_Yonetici_Ekle.Designer.cs">
+      <DependentUpon>uc_Yonetici_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\Sil\uc_Yonetici_Sil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\Sil\uc_Yonetici_Sil.Designer.cs">
+      <DependentUpon>uc_Yonetici_Sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\uc_Yonetici.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paneller\Yonetici\uc_Yonetici.Designer.cs">
+      <DependentUpon>uc_Yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SunucuBaglantisi\SqlSunucu.cs" />
+    <Compile Include="SunucuBaglantisi\SqlSunucu.Islemler.cs" />
+    <Compile Include="Veriler\Blok.cs" />
+    <Compile Include="Veriler\SqlVeri.cs" />
+    <Compile Include="Veriler\Oda.cs" />
+    <Compile Include="Veriler\Ogrenci.cs" />
+    <Compile Include="Veriler\OgrenciHesap.cs" />
+    <Compile Include="Veriler\Taksit.cs" />
+    <Compile Include="Veriler\Yonetici.cs" />
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGecis\OtomasyonMenu.resx">
+      <DependentUpon>OtomasyonMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\Blok Ekle\uc_Oda_BlokEkle.resx">
+      <DependentUpon>uc_Oda_BlokEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\Blok Sil\uc_Oda_BlokSil.resx">
+      <DependentUpon>uc_Oda_BlokSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\Listele\uc_Oda_Listele.resx">
+      <DependentUpon>uc_Oda_Listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\Oda Ekle\uc_Oda_OdaEkle.resx">
+      <DependentUpon>uc_Oda_OdaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\Oda Sil\uc_Oda_OdaSil.resx">
+      <DependentUpon>uc_Oda_OdaSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Oda\uc_Oda.resx">
+      <DependentUpon>uc_Oda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Odeme\Ekle\uc_Odeme_Ekle.resx">
+      <DependentUpon>uc_Odeme_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Odeme\Gecikenler\uc_Odeme_Gecikenler.resx">
+      <DependentUpon>uc_Odeme_Gecikenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Odeme\Listele\uc_Odeme_Listele.resx">
+      <DependentUpon>uc_Odeme_Listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Odeme\uc_Odeme.resx">
+      <DependentUpon>uc_Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Ogrenci\Duzenle\uc_Ogrenci_Duzenle.resx">
+      <DependentUpon>uc_Ogrenci_Duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Ogrenci\Kayit\uc_Ogrenci_Kayit.resx">
+      <DependentUpon>uc_Ogrenci_Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Ogrenci\Listele\uc_Ogrenci_Listele.resx">
+      <DependentUpon>uc_Ogrenci_Listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Ogrenci\Sil\uc_Ogrenci_Sil.resx">
+      <DependentUpon>uc_Ogrenci_Sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Ogrenci\uc_Ogrenci.resx">
+      <DependentUpon>uc_Ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Yoklama\Duzenle\uc_Yoklama_Duzenle.resx">
+      <DependentUpon>uc_Yoklama_Duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Yoklama\uc_Yoklama.resx">
+      <DependentUpon>uc_Yoklama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Yonetici\Ekle\uc_Yonetici_Ekle.resx">
+      <DependentUpon>uc_Yonetici_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Yonetici\Sil\uc_Yonetici_Sil.resx">
+      <DependentUpon>uc_Yonetici_Sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Yonetici\uc_Yonetici.resx">
+      <DependentUpon>uc_Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odablok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person+user+icon-1320166085409390336.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoklama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yurt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazdir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

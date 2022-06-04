@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
+  <Class Name="Yurt_Otomasyon.AramaIslemleri" Collapsed="true">
+    <Position X="61.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AramaIslemleri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Giris" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAJABAACAAAACAQAQAAAEIAAAAABIAAA=</HashCode>
+      <FileName>Giris.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Program" Collapsed="true">
+    <Position X="61.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Extensions.Extensions" Collapsed="true">
+    <Position X="63" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.MenuGecis.Menu" Collapsed="true">
+    <Position X="36.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuGecis\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.MenuGecis.OtomasyonMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIIAACgCQAABIAAACAQAgjAAAIAAABAAAAgCAKAAA=</HashCode>
+      <FileName>MenuGecis\OtomasyonMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.Blok_Ekle.uc_Oda_BlokEkle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAABAAgACAAAACAAAAkDAAJAAAAAAAAAQ=</HashCode>
+      <FileName>Paneller\Oda\Blok Ekle\uc_Oda_BlokEkle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.Blok_Sil.uc_Oda_BlokSil" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQACAAABAAAACAAAACAAAAkDAEIAAAAAABAAA=</HashCode>
+      <FileName>Paneller\Oda\Blok Sil\uc_Oda_BlokSil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.Listele.uc_Oda_Listele" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAQABAQAACAAAACAAAI0DAAIAAAAAAAAAQ=</HashCode>
+      <FileName>Paneller\Oda\Listele\uc_Oda_Listele.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.Oda_Ekle.uc_Oda_OdaEkle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="56.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAABAAAACAAAACAAAI0DAAIEAAAAAIAAQ=</HashCode>
+      <FileName>Paneller\Oda\Oda Ekle\uc_Oda_OdaEkle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.Oda_Sil.uc_Oda_OdaSil" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIBAQAACBAAACQgAI0DAAIAAAQAABAAQ=</HashCode>
+      <FileName>Paneller\Oda\Oda Sil\uc_Oda_OdaSil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Oda.uc_Oda" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQgAIAAAACQAAQAAAAGABAACQAAIgAAAAEAAAAAAgAQ=</HashCode>
+      <FileName>Paneller\Oda\uc_Oda.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Odeme.Ekle.uc_Odeme_Ekle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAEAAQAKAAABAIAISAAAACAGEAkDgAAUCEKIgBAAg=</HashCode>
+      <FileName>Paneller\Odeme\Ekle\uc_Odeme_Ekle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Odeme.Gecikenler.uc_Odeme_Gecikenler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAAAAAACAAAACAAAAkAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Paneller\Odeme\Gecikenler\uc_Odeme_Gecikenler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Odeme.Listele.uc_Odeme_Listele" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAQACAQABAIAISAAAACAEAAkDgAAQCAAIgAAAA=</HashCode>
+      <FileName>Paneller\Odeme\Listele\uc_Odeme_Listele.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Odeme.uc_Odeme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACQAAAAAAACAUAgCACAIgAAAgIAAAAAAAAQ=</HashCode>
+      <FileName>Paneller\Odeme\uc_Odeme.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Ogrenci.Duzenle.uc_Ogrenci_Duzenle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wQAIAQAACsEABEAEICBAACCA1MI0DAAIQAAAICFADY=</HashCode>
+      <FileName>Paneller\Ogrenci\Duzenle\uc_Ogrenci_Duzenle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Ogrenci.Kayit.uc_Ogrenci_Kayit" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wgEQIAEMCkAiRAkBACBABMiIkAIwLUAMAAECgAAJjY=</HashCode>
+      <FileName>Paneller\Ogrenci\Kayit\uc_Ogrenci_Kayit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Ogrenci.Listele.uc_Ogrenci_Listele" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAIAAAACgQABAAAACBAAACAkAI0DAAIAAAAAAAAAQ=</HashCode>
+      <FileName>Paneller\Ogrenci\Listele\uc_Ogrenci_Listele.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Ogrenci.Sil.uc_Ogrenci_Sil" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAACAAABAQAACBAAACAkAI0DAAIAAAAAAFAAw=</HashCode>
+      <FileName>Paneller\Ogrenci\Sil\uc_Ogrenci_Sil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Ogrenci.uc_Ogrenci" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="58.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkQAACQAAAAAAACAgAACAAAIgAAAAEAIAEAGAAQ=</HashCode>
+      <FileName>Paneller\Ogrenci\uc_Ogrenci.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Yoklama.Duzenle.uc_Yoklama_Duzenle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQQAAAAACAQABIIABCAAAICCECAkDgAAwCAAAgBAAg=</HashCode>
+      <FileName>Paneller\Yoklama\Duzenle\uc_Yoklama_Duzenle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Yoklama.uc_Yoklama" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIgAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Paneller\Yoklama\uc_Yoklama.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Yonetici.Ekle.uc_Yonetici_Ekle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAEICAIABCAAADAAAACoEAAkDAAIAAAAAABAAA=</HashCode>
+      <FileName>Paneller\Yonetici\Ekle\uc_Yonetici_Ekle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Yonetici.Sil.uc_Yonetici_Sil" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAABAAAACAQAACAAAAkDAAMAAAAAABAAA=</HashCode>
+      <FileName>Paneller\Yonetici\Sil\uc_Yonetici_Sil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Paneller.Yonetici.uc_Yonetici" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACQAAAAAAACAAAACAAAIgCAAAEAAQAABAAQ=</HashCode>
+      <FileName>Paneller\Yonetici\uc_Yonetici.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Properties.Resources" Collapsed="true">
+    <Position X="34" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAEAAAAAQAACBGQAAAQEAAAAAAAGAAACAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Properties.Settings" Collapsed="true">
+    <Position X="63" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.SunucuBaglantisi.SqlSunucu" Collapsed="true">
+    <Position X="31.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABFAAAIAQAAAAAAQAgAAEAEAAAIAABAAAAAAA=</HashCode>
+      <FileName>SunucuBaglantisi\SqlSunucu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.Blok">
+    <Position X="29.25" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Veriler\Blok.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.Oda">
+    <Position X="15" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQCiAAAAgAAAAAAQAAAAMAAAACAAAAAAgA=</HashCode>
+      <FileName>Veriler\Oda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.Ogrenci">
+    <Position X="17.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgQqAAYoAEAACABCAADASEAAAAAgAAACAAEAAAgAImA=</HashCode>
+      <FileName>Veriler\Ogrenci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.OgrenciHesap">
+    <Position X="20.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAiAAAAAQAACIEAAAAAAAAAAAAQEAAAAAAAAgAAIgA=</HashCode>
+      <FileName>Veriler\OgrenciHesap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.SqlVeri">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAIAAAIAAA=</HashCode>
+      <FileName>Veriler\SqlVeri.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.Taksit">
+    <Position X="23.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAACAAAAAAEAAAAAAAAAAAAAAAAAAACIgA=</HashCode>
+      <FileName>Veriler\Taksit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yurt_Otomasyon.Veriler.Yonetici">
+    <Position X="26.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAQAAAIAAACAAAAAAAAIAIAACAAAIAA=</HashCode>
+      <FileName>Veriler\Yonetici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="37.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="25.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Yurt_Otomasyon.YoneticiGiris" Collapsed="true">
+    <Position X="61.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Giris.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Yurt_Otomasyon.Interface.IIslemler" Collapsed="true">
+    <Position X="61.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IIslemler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Yurt_Otomasyon.Interface.IMenu" Collapsed="true">
+    <Position X="63" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IMenu.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Yurt_Otomasyon.Interface.IPanel" Collapsed="true">
+    <Position X="61.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IPanel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Yurt_Otomasyon.Interface.ISqlVeri" Collapsed="true">
+    <Position X="63" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Interface\ISqlVeri.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
